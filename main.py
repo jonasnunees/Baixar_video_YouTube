@@ -12,10 +12,11 @@ def video_download():
             put_text('Fazendo download...'.title()).style('color: red; font-size: 50px')
             video_url = YouTube(video_link)
             video = video_url.streams.get_highest_resolution()
-            path_to_download = (r'C:\Users\Gabinete-PC02\Downloads')
+            path_to_download = (r'C:\Users\coloque_seu_diretorio_aqui')
             video.download(path_to_download)
             put_text('Download finalizado!'.title())
-            startfile(r'C:\\Users\\Gabinete-PC02\\Downloads')
+            # lembre-se de separar com duas barras nessa parte
+            startfile(r'C:\\Users\\coloque_seu_diretorio_aqui')
 
 
 if __name__ == '__main__':
